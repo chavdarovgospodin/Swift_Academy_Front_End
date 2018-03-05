@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index Page 3</title>
+    <script>
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML =
+                today;
+                var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                return i;
+            }
+            </script>
+    <style>
+        body {
+            background-color: powderblue;
+        }
+
+    </style>
+</head>
+<body onload="startTime()">
+
+    <h1 style="text-align:center"><img src="london.jpeg" alt="London" width="500" height="300"></h1>
+    <br>
+    <p style="text-align:center">This is a HTML doc</p>
+    <h1 style="text-align:center"><b><u>This is a doc</u></b></h1>
+    <br>
+    <hr>
+    <ul>
+        <li style="background-color:tomato">This is line 1</li>
+        <li style="background-color:yellowgreen">This is line 2</li>
+    </ul>
+
+    <ol>
+        <li>This is line 3</li>
+        <li>This is line 4</li>
+    </ol>
+    <h1> <a href="index.html">This is page 1</a></h1>
+    <br>
+    <h2><a href="subfolder/index2.html">This is page 2</a></h2>
+    <hr>
+    <footer style="color:red">
+            <div id="txt" style="text-align:right"></div>
+    </footer>
+</body>
+</html>

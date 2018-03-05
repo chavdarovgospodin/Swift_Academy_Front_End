@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 28.02</title>
+    <style>
+        body{
+            background-color:darkgrey
+        }
+        .table{
+          color: darkblue
+        }
+        </style>
+</head>
+<body>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id tempor erat. Donec molestie sagittis neque, vel commodo libero ultricies et. In hac habitasse platea dictumst. Nulla mattis ornare lacus vel accumsan. Proin euismod fringilla felis dapibus tristique. Cras molestie sodales nisl, vitae ultrices velit dictum eget. Ut in ligula commodo, euismod ipsum vel, suscipit nisl. Curabitur lacinia enim lorem, sit amet tempor orci dapibus sed. Aliquam lacus magna, iaculis quis tortor in, auctor bibendum lacus. Maecenas leo risus, maximus quis nulla id, interdum dignissim velit. Vestibulum posuere vehicula ipsum et feugiat. Ut nisl ligula, pulvinar sit amet ante eget, cursus eleifend eros. Duis tempor augue suscipit dui efficitur lacinia. Nunc et aliquet velit. Ut felis diam, tempus ac sem et, feugiat tempus diam. Fusce eget velit lorem.
+    </p>   
+
+    <br>
+    <ul>
+
+     <li>1</li>
+     <li>2</li>
+     <li>3</li>
+     <li>4</li>
+     <ol>
+         <li>1</li>
+         <li>2</li>
+         <li>3</li>
+         <li>4</li>
+     </ol>
+    </ul>
+
+    <br>
+<div class="table">
+    <table border="5">
+        <tr>
+            <th>Heading 1</th>
+            <th>Heading 2</th>
+            <th>Heading 3</th>
+            <th>Heading 4</th>
+        </tr>
+        <tr>
+           <td rowspan="4">Long column</td>
+           <td colspan="3">Long row top</td> 
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td colspan="2">2 rows merged</td>
+        </tr>
+        <tr>
+            <td colspan="3">Long row bottom</td>
+        </tr>
+    </table>
+</div>   
+
+    <br>
+
+    <form action="/action_page.php">
+             <label>Email</label>
+             <input type="email" name="email" id="">
+
+             <br>
+
+             <label>Password</label>
+             <input type="password" name="password" id="">
+
+             <br>
+
+             <label>Birth date</label>
+             <input type="date" name="date" id="">
+        
+             <br>
+
+              <label>Gender</label>
+
+			   <br>
+
+			   <label for="male">Male</label>
+			   <input type="radio" name="gender" id="male" value="male">
+			   <label for="female">Female</label>
+               <input type="radio" name="gender" id="female" value="female">
+               
+               <br><br><br>
+
+			   <label for="">About me</label>
+               <textarea name="Text" id="" cols="30" rows="10"></textarea>
+               
+               <br>
+
+               <input type="submit" value="Submit">
+    </form>
+
+
+
+</body>
+</html>
